@@ -1,0 +1,27 @@
+#pw {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px 15px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 10px 0;
+}
+
+#cmt-input-container {
+    background: #b7b7b7;
+}

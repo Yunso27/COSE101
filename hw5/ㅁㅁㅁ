@@ -1,0 +1,47 @@
+//내 빙고 체크
+            for(int i = 0; i < 5; i++){
+                z_dup = 0;
+                for(k = 0; k < 25; k++){
+                    
+                    if(com_open_num[k] == com_bgo[i][0]) z_dup++;
+                    if(com_open_num[k] == com_bgo[i][1]) z_dup++; 
+                    if(com_open_num[k] == com_bgo[i][2]) z_dup++; 
+                    if(com_open_num[k] == com_bgo[i][3]) z_dup++; 
+                    if(com_open_num[k] == com_bgo[i][4]) z_dup++;  
+                }
+                if(z_dup == 5) com_bgo_cnt++;
+                
+                z_dup = 0;
+                for(k = 0; k < 25; k++){
+                    
+                    if(com_open_num[k] == com_bgo[0][i]) z_dup++;
+                    if(com_open_num[k] == com_bgo[1][i]) z_dup++;
+                    if(com_open_num[k] == com_bgo[2][i]) z_dup++;
+                    if(com_open_num[k] == com_bgo[3][i]) z_dup++;
+                    if(com_open_num[k] == com_bgo[4][i]) z_dup++;
+                }
+                if(z_dup == 5) com_bgo_cnt++;
+            }
+            z_dup = 0;
+            for(k = 0; k < 25; k++){
+
+                if(com_open_num[k] == com_bgo[0][0]) z_dup++;
+                if(com_open_num[k] == com_bgo[1][1]) z_dup++;
+                if(com_open_num[k] == com_bgo[2][2]) z_dup++;
+                if(com_open_num[k] == com_bgo[3][3]) z_dup++;
+                if(com_open_num[k] == com_bgo[4][4]) z_dup++;
+            }
+            if(z_dup == 5) com_bgo_cnt++;
+            z_dup = 0;
+            for(k = 0; k < 25; k++){
+                
+                if(com_open_num[k] == com_bgo[4][0]) z_dup++;
+                if(com_open_num[k] == com_bgo[3][1]) z_dup++;
+                if(com_open_num[k] == com_bgo[2][2]) z_dup++;
+                if(com_open_num[k] == com_bgo[1][3]) z_dup++;
+                if(com_open_num[k] == com_bgo[0][4]) z_dup++;
+            }
+            if(z_dup == 5) com_bgo_cnt++;
+            printf("%d %d\n\n\n", z_dup, com_bgo_cnt);
+            if(com_bgo_cnt < 5) com_bgo_cnt = 0;
+            printf("%d %d\n\n\n", z_dup, com_bgo_cnt); 
